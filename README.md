@@ -7,6 +7,7 @@ Front End with Vehicles Added from Back-end with details
 Back-end login system for admins, employees
 Different Controlling for Admin and Employee
 New Employee Adding for doing Sales , Adding new vehicles
+
 	Admin Features : # Add, Edit , Delete almost anything(Including new users), Sell vehicles, See customer Details
 	Employee Features : # Add vehicles only and Sell them to new clients with their details
 	-------------------------------------------------------------------------

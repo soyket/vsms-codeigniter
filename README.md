@@ -30,5 +30,4 @@ If you want more customized option don't hesitate to contact me here or on : dra
 
 
 
-By- Soyket Chowdhury
-AIUB, CSE
+By- Soyket Chowdhury, AIUB, CSE

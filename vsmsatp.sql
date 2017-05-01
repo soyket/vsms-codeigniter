@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 05, 2017 at 05:59 PM
--- Server version: 10.1.8-MariaDB
--- PHP Version: 5.5.30
+-- Generation Time: May 01, 2017 at 10:57 PM
+-- Server version: 10.1.19-MariaDB
+-- PHP Version: 5.6.28
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -105,6 +105,7 @@ INSERT INTO `models` (`id`, `manufacturer_id`, `model_name`, `model_description`
 
 CREATE TABLE `users` (
   `id` int(11) NOT NULL,
+  `su` int(11) DEFAULT '0',
   `type` varchar(15) NOT NULL,
   `position` varchar(30) NOT NULL,
   `email` varchar(255) NOT NULL,
@@ -121,10 +122,9 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `type`, `position`, `email`, `password`, `first_name`, `last_name`, `gender`, `birthday`, `mobile`, `address`) VALUES
-(1, 'admin', 'manager', 'admin@admin.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Afikur Rahman', 'Khan', 'male', '1992-11-29', '01781297685', 'Nikunja-2, Khilkhet, Dhaka 1229'),
-(6, 'employee', 'Manager', 'employee@employee.com', '81dc9bdb52d04dc20036dbd8313ed055', 'Soykot', 'Chowdhury', 'male', '2016-12-27', '15245645646', 'asdfsdafasd'),
-(7, '0', '232323jjasjdjasd', 'employee2@employee.com', 'b6d767d2f8ed5d21a44b0e5886680cb9', '2323', 'edas', 'male', '2015-11-30', '2323', 'qwsdasd');
+INSERT INTO `users` (`id`, `su`, `type`, `position`, `email`, `password`, `first_name`, `last_name`, `gender`, `birthday`, `mobile`, `address`) VALUES
+(6, 1, 'admin', 'Super Admin', 'admin@admin.com', '21232f297a57a5a743894a0e4a801fc3', 'Soykot', 'Chowdhury', 'male', '2016-12-27', '15245645646', 'asdfsdafasd'),
+(7, 1, 'employee', 'Employee Super', 'employee@employee.com', 'fa5473530e4d1a5a1e1eb53d2fedb10c', 'EMPLOYEE', 'EDISON', 'male', '2015-11-30', '2323', 'qwsdasd');
 
 -- --------------------------------------------------------
 
@@ -162,11 +162,11 @@ CREATE TABLE `vehicles` (
 --
 
 INSERT INTO `vehicles` (`vehicle_id`, `manufacturer_id`, `model_id`, `category`, `buying_price`, `selling_price`, `mileage`, `color`, `add_date`, `sold_date`, `status`, `registration_year`, `insurance_id`, `user_id`, `gear`, `doors`, `seats`, `tank`, `image`, `engine_no`, `chesis_no`, `featured`) VALUES
-(2, 16, 9, 'Subcompact', 12000100, NULL, 55, 'red', '2016-12-27 18:00:00', NULL, 'available', 2010, 2147483647, 1, 'auto', 6, 2147483647, 25, '77303.jpg', 2147483647, 21231231, 1),
-(5, 18, 9, 'Subcompact', 10000200, NULL, 25, 'black', '2016-12-27 18:00:00', NULL, 'available', 2010, 4545656, 1, 'auto', 87489796, 4, 25, 'bughatti.jpg', 2147483647, 21231231, 1),
-(7, 19, 10, 'Subcompact', 11000100, 12000100, 25, 'black', '2016-12-27 18:00:00', '2016-12-29 00:00:00', 'sold', 2010, 4545656, 1, 'auto', 87489796, 4, 25, 'bughatti.jpg', 2147483647, 21231231, NULL),
-(8, 20, 9, 'Compact', 10000100, 1000, 556, 'Yellow', '2016-12-28 18:00:00', '2016-12-29 00:00:00', 'sold', 2012, 2147483647, 1, 'auto', 4, 4, 25, 'yellow-lamborghini-gallardo-Wallpaper.jpg', 2147483647, 2147483647, NULL),
-(12, 16, 9, 'Subcompact', 2000000, 20000000, 3, 'Black', '2016-12-28 18:00:00', '2016-12-29 00:00:00', 'sold', 2001, 121212, 1, 'auto', 2, 3, 34, '7538.jpg', 23232, 232323, 1);
+(2, 16, 9, 'Subcompact', 12000100, NULL, 55, 'red', '2016-12-27 12:00:00', NULL, 'available', 2010, 2147483647, 1, 'auto', 6, 2147483647, 25, '77303.jpg', 2147483647, 21231231, 1),
+(5, 18, 9, 'Subcompact', 10000200, NULL, 25, 'black', '2016-12-27 12:00:00', NULL, 'available', 2010, 4545656, 1, 'auto', 87489796, 4, 25, 'bughatti.jpg', 2147483647, 21231231, 1),
+(7, 19, 10, 'Subcompact', 11000100, 12000100, 25, 'black', '2016-12-27 12:00:00', '2016-12-29 00:00:00', 'sold', 2010, 4545656, 1, 'auto', 87489796, 4, 25, 'bughatti.jpg', 2147483647, 21231231, NULL),
+(8, 20, 9, 'Compact', 10000100, 1000, 556, 'Yellow', '2016-12-28 12:00:00', '2016-12-29 00:00:00', 'sold', 2012, 2147483647, 1, 'auto', 4, 4, 25, 'yellow-lamborghini-gallardo-Wallpaper.jpg', 2147483647, 2147483647, NULL),
+(12, 16, 9, 'Subcompact', 2000000, 20000000, 3, 'Black', '2016-12-28 12:00:00', '2016-12-29 00:00:00', 'sold', 2001, 121212, 1, 'auto', 2, 3, 34, '7538.jpg', 23232, 232323, 1);
 
 --
 -- Indexes for dumped tables
@@ -231,7 +231,7 @@ ALTER TABLE `models`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `vehicles`
 --

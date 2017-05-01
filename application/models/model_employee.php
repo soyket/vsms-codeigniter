@@ -47,6 +47,7 @@ class model_employee extends CI_Model {
         );
 
 		$this->db->where('id', $u_id);
+		$this->db->where("(su != 1)");
 		$this->db->update('users', $data); 
 	}
 
@@ -54,6 +55,7 @@ class model_employee extends CI_Model {
 	public function delete($u_id)
 	{
 		$this->db->where('id', $u_id);
+		$this->db->where("(su != 1)");
 		$this->db->delete('users'); 
 	}
 }

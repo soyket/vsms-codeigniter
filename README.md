@@ -20,10 +20,13 @@ Template has been used for back-end and front end
 More customization coming in future
 Added Web.config file setting in-case you want to host this on Azure account :D 
 
-See the software working on azure live : 
-https://vsmsatp3.azurewebsites.net/vsmsatp3/
-user : demo@demo.com
-pass : demo 
+See the software working live : 
+http://soykot.tk/vsmsatp3
+user  : admin@admin.com
+pass : admin
+
+user : employee@employee.com
+pass: employee
 
 
 If you want more customized option don't hesitate to contact me here or on : dranger2011@gmail.com

@@ -18,16 +18,23 @@ New Employee Adding for doing Sales , Adding new vehicles
 
 Template has been used for back-end and front end 
 More customization coming in future
-Added Web.config file setting in-case you want to host this on Azure account :D 
+Added Web.config file setting in-case you want to host this on Azure account 
 
-See the software working on azure live : 
-https://vsmsatp3.azurewebsites.net/vsmsatp3/
-user : demo@demo.com
-pass : demo 
+See the software working live : 
+http://voidthemes.com/scripts/vsmspro/
+
+Admin User : admin@admin.com
+Password : admin
+
+Employee User : employee@employee.com
+Password : employee
+
+Video Tutorial for config : https://www.youtube.com/watch?v=F4uyw47OlJI
+
+Visit our site : http://voidthemes.com 
 
 
-If you want more customized option don't hesitate to contact me here or on : dranger2011@gmail.com
-
+If you want more customized option / The Pro Version don't hesitate to contact me here or on : dranger2011@gmail.com
 
 
 By- Soyket Chowdhury, AIUB, CSE

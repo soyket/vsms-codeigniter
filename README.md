@@ -21,16 +21,7 @@ More customization coming in future
 Added Web.config file setting in-case you want to host this on Azure account 
 
 See the software working live : 
-<<<<<<< HEAD
 http://voidthemes.com/scripts/vsmspro/
-=======
-http://soykot.tk/vsmsatp3
-user  : admin@admin.com
-pass : admin
-
-user : employee@employee.com
-pass: employee
->>>>>>> origin/master
 
 Admin User : admin@admin.com
 Password : admin

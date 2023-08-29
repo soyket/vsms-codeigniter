@@ -1,3 +1,10 @@
+THIS PROJECT IS NOT MAINTAINED & MIGHT HAVE SECURITY FLAWS DUE TO THAT. USE AT YOUR OWN RISK. 
+
+
+
+
+
+
 # Vehicle Sales Management System - Codeigniter
 
 Vehicle Sales Management System Built on CodeIgniter 2.x Framework
@@ -20,9 +27,6 @@ Template has been used for back-end and front end
 More customization coming in future
 Added Web.config file setting in-case you want to host this on Azure account 
 
-See the software working live : 
-http://voidthemes.com/scripts/vsmspro/
-
 Admin User : admin@admin.com
 Password : admin
 
@@ -30,11 +34,3 @@ Employee User : employee@employee.com
 Password : employee
 
 Video Tutorial for config : https://www.youtube.com/watch?v=F4uyw47OlJI
-
-Visit our site : http://voidthemes.com 
-
-
-If you want more customized option / The Pro Version don't hesitate to contact me here or on : dranger2011@gmail.com
-
-
-By- Soyket Chowdhury, AIUB, CSE
